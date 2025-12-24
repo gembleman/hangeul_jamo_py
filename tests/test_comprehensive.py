@@ -10,7 +10,7 @@ This module tests 100% of all valid Korean syllable and jamo combinations:
 """
 
 import pytest
-from hangeul import (
+from hangeul_jamo_py import (
     compose_compound,
     compose_hcj,
     compose_jamo,

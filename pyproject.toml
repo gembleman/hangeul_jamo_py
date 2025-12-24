@@ -1,5 +1,5 @@
 [project]
-name = "hangeul_jamo"
+name = "hangeul-jamo-py"
 version = "1.0.0"
 description = "A modern, optimized Korean Hangul syllable and jamo manipulation library"
 readme = "README.md"
@@ -31,6 +31,9 @@ dev-dependencies = [
     "mypy>=1.19.0",
     "ruff>=0.14.0",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hangeul_jamo_py"]
 
 [build-system]
 requires = ["hatchling"]

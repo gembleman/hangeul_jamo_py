@@ -11,7 +11,7 @@ import random
 from typing import Generator
 
 import pytest
-from hangeul import (
+from hangeul_jamo_py import (
     compose_hcj,
     compose_jamo,
     decompose_hcj,

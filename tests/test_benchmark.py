@@ -5,7 +5,7 @@ from typing import Callable
 
 import pytest
 
-import hangeul
+import hangeul_jamo_py as hangeul
 
 
 class Timer:

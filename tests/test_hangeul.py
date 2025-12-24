@@ -2,7 +2,7 @@
 
 import pytest
 
-import hangeul
+import hangeul_jamo_py as hangeul
 
 
 class TestValidation:
