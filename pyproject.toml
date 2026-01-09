@@ -24,20 +24,15 @@ Homepage = "https://github.com/gembleman/hangeul_jamo"
 Documentation = "https://github.com/gembleman/hangeul_jamo"
 Repository = "https://github.com/gembleman/hangeul_jamo"
 
-[tool.uv]
-dev-dependencies = [
-    "pytest>=9.0.0",
-    "pytest-cov>=7.0.0",
-    "mypy>=1.19.0",
-    "ruff>=0.14.0",
-]
+[dependency-groups]
+dev = ["pytest>=9.0.0", "pytest-cov>=7.0.0", "mypy>=1.19.0", "ruff>=0.14.0"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/hangeul_jamo_py"]
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
 
 [tool.pytest.ini_options]
 markers = ["slow: marks tests as slow (deselect with '-m \"not slow\"')"]
